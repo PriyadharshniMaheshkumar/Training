@@ -1,0 +1,97 @@
+.content {
+   display: flex;
+}
+.page {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+.page-select {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #60a9e1;
+}
+
+.page-icons {
+    display: flex;
+    padding-top: 20px;
+    justify-content: space-around;
+}
+
+ .icon >svg {
+    height: 60px;
+    fill: #0d4773;
+}
+
+
+.page-title {
+    display: flex;
+    align-items: center;
+    color: #fcfdfd;
+}
+
+.logo {
+    >svg {
+        height: 60px;
+        width: 100%;
+    }
+    >svg path {
+        fill: #fcfdfd !important;
+    }      
+}
+
+.title {
+    font-size: 60px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 8px;
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .page {
+        width: 1024px;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 1024px) {
+    .page {
+        width: 800px;
+        margin: 0 auto;
+    }
+}
+
+
+body.dark .page {
+    box-shadow: 0 4px 0 #fcfdfd, 0 6px 8px #fcfdfd;
+}
+
+body.dark .page-select {
+    background-color: #1e679f;
+} 
+
+body.dark .logo {
+    >svg path {
+        fill: #020303 !important;
+    }
+}
+
+body.dark .page-title {
+    color: #020303;
+}
+
+body.dark  .icon>svg {
+     fill: #8cc6f2;
+ }
+
+ body.dark .page {
+    background-color: #020303;
+ }
+
+

@@ -1,0 +1,27 @@
+.notification-bar {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    transition: bottom 0.3s ease-in-out;
+    height: 42px;
+    opacity: 73%;
+    border-top: 2px solid black;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%
+}
+  
+
+.countdown {
+    text-align: justify;
+}
+
+body.dark .notification-bar {
+    border-top: 2px solid white;
+    background-color: rgba(255, 255, 255, 0.4);
+    opacity: 40%;
+    color: white;
+}
